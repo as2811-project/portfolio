@@ -4,9 +4,10 @@ import { usePathname } from "next/navigation";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Work", href: "/work" },
+  { name: "Experience", href: "/experience" },
   { name: "Projects", href: "/projects" },
   { name: "Photography", href: "/photography" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export default function Navigation() {
@@ -21,7 +22,7 @@ export default function Navigation() {
           className={cn(
             "text-sm transition-colors hover:text-blue-500",
             pathname === item.href
-              ? "bg-secondary/80 px-3 py-1.5 rounded-full hover:text-white"
+              ? "bg-secondary/80 px-3 py-1.5 rounded-full dark:hover:text-white"
               : "text-muted-foreground"
           )}
         >

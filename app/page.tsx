@@ -60,13 +60,13 @@ const tools = [
 
 const movies = [
   {
-    url: "https://m.media-amazon.com/images/M/MV5BNDdjZGQ5YzEtNTc2My00Mjc0LWFlMTctYzkwMzZlNzdiZWYzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    url: "/gwh-imdb.jpg",
   },
   {
-    url: "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_.jpg",
+    url: "/interstellar.jpg",
   },
   {
-    url: "https://m.media-amazon.com/images/M/MV5BNjVjNDkxOGYtZGY1NS00MjI2LWEyNWEtOTA1ZGQ0NjYyNmIzXkEyXkFqcGc@._V1_.jpg",
+    url: "/anbesivam.jpg",
   },
 ];
 
@@ -99,22 +99,21 @@ export default function Home() {
           <div className="mt-8 opacity-90">
             <p className="">
               Hi, I’m Anandh. I am from Chennai, India. I was born in ‘99, in
-              Dammam, Saudi Arabia. Being an early GenZ-er, I experienced
+              Dammam, Saudi Arabia. Being an early GenZ-er, I've experienced
               dial-up internet connections and keypad phones all the way up to
               streaming Netflix on 4K on my 5G connection and LLMs. Naturally, I
-              built a passion for technology. I GREW up along with the
-              exponential progress of tech!
+              built a passion for technology. I GREW up with technology!
             </p>
             <p className="mt-4">
               After my bachelor's degree in IT, I started working at Freshworks
               in 2021 not as an engineer but as a product and customer
               specialist. I immediately became one of the best in the team (if I
               say so myself). I realised my passion for data science and
-              web-scale software engineering during my time there, so I decided
-              to pivot back into fully technical roles and study further. That
-              decision brought me to Melbourne, Australia. I’ve completed my
-              Masters in Data Science from RMIT University. I’m more capable
-              than ever and itching to restart my career in tech.
+              web-scale software during my time there, so I decided to study
+              further and refocus my career towards data science and
+              engineering. That decision brought me to Melbourne, Australia. I
+              completed my Masters in Data Science from RMIT University. I’m
+              more capable than ever and itching to restart my career in tech.
             </p>
           </div>
           <div className="mt-8">
@@ -168,7 +167,6 @@ export default function Home() {
                     src={item.url}
                     alt="Movie Poster"
                     className="object-cover hover:scale-105 transition-transform duration-300"
-                    isBlurred
                   />
                 </div>
               ))}
@@ -188,7 +186,7 @@ export default function Home() {
               ></iframe>
               <iframe
                 style={{ borderRadius: "12px" }}
-                src="https://open.spotify.com/embed/track/0zEKfIm5b8EUcDM3qoPXKX?utm_source=generator&theme=0"
+                src="https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n?utm_source=generator"
                 width="100%"
                 height="152"
                 frameBorder="0"
@@ -207,7 +205,7 @@ export default function Home() {
                     src="https://cdn.brandfetch.io/gmail.com/w/512/h/385/symbol?c=1idKaH_iwwY7_QN5llq"
                     alt="Gmail"
                     radius="none"
-                    className="w-10 h-7"
+                    className="w-10 h-7 hover:scale-105 transition-transform duration-300"
                   />
                 </a>
                 <a href="https://www.linkedin.com/in/anandh-sellamuthu-as/">
@@ -215,7 +213,7 @@ export default function Home() {
                     src="https://cdn.brandfetch.io/linkedin.com/w/512/h/437/symbol?c=1idKaH_iwwY7_QN5llq"
                     alt="LinkedIn"
                     radius="none"
-                    className="w-10 h-8"
+                    className="w-10 h-8 hover:scale-105 transition-transform duration-300"
                   />
                 </a>
               </div>
