@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Footer from "@/components/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -21,8 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+      <body className={`${inter.variable} antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
         <Footer />
