@@ -34,8 +34,22 @@ export default function Footer() {
         <div className="flex flex-col items-center">
           <h3 className="">Connect with me</h3>
           <ul className="text-sm text-gray-500">
-            <li>Gmail</li>
-            <li>LinkedIn</li>
+            <li>
+              <a
+                href="mailto:sanandh1234@gmail.com"
+                className="hover:underline"
+              >
+                Gmail
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/anandh-sellamuthu-as/"
+                className="hover:underline"
+              >
+                LinkedIn
+              </a>
+            </li>
           </ul>
         </div>
       </div>
