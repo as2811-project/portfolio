@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-sm text-gray-500 mt-8 text-center">
-        &copy; Anandh Sellamuthu | 2024
+        &copy; Anandh Sellamuthu | {new Date().getFullYear()}
       </div>
     </footer>
   );
